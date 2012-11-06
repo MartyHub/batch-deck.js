@@ -181,8 +181,8 @@
 	<ul>
 		<li>One typed property by input parameter</li>
 		<li>Prefix property with <strong>optional</strong> if parameter is not mandatory</li>
-		<li>Initialize propery if parameter has a default value</li>
-		<li>Implement <code>Validatable</code> interface to code more complex parameters validation</li>
+		<li>Initialize property if parameter has a default value</li>
+		<li>Implement <code>Validatable</code> interface to process more complex parameters validation</li>
 		<li>Use <code>@Description</code> annotation on setter for parameter documentation</li>
 	</ul>
 </section>
@@ -193,27 +193,23 @@
 	<ul>
 		<li>In the <strong>same package</strong> as the Command class</li>
 		<li><strong>Same name</strong> as Command class, suffixed with <strong>Processor</strong></li>
+		<li>Use <strong>Spring</strong> annotation <code>Component</code> to declare class as a Spring Bean</li>
+		<li>Use <code>Command</code> annotation to declare class as a Batch</li>
 	</ul>
 </section>
 
 <section class="slide">
 	<h2>Deployment</h2>
 	<h3>Add a Maven assembly for developers :</h3>
-	<pre><code>&lt;dependency&gt;
-	&lt;groupId&gt;&lt;/groupId&gt;
-	&lt;artifactId&gt;&lt;/artifactId&gt;
-	&lt;version&gt;X.Y.Z-Final&lt;/version&gt;
-&lt;/dependency&gt;</code></pre>
+	<pre><code>
+	</code></pre>
 </section>
 
 <section class="slide">
 	<h2>Deployment</h2>
 	<h3>Add a Maven assembly for users :</h3>
-	<pre><code>&lt;dependency&gt;
-	&lt;groupId&gt;&lt;/groupId&gt;
-	&lt;artifactId&gt;&lt;/artifactId&gt;
-	&lt;version&gt;X.Y.Z-Final&lt;/version&gt;
-&lt;/dependency&gt;</code></pre>
+	<pre><code>
+	</code></pre>
 </section>
 
 <!-- End slides. -->
